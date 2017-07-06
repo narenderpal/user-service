@@ -29,13 +29,13 @@ public class UserServiceImpl implements UserService {
     String uri = config.getString("mongo_uri");
     if (uri == null) {
       // running locally using local mongo db
-      uri = "mongodb://localhost:27017";
+      //uri = "mongodb://localhost:27017";
 
       // using mongo db docker container
       //uri = "mongodb://mongo:27017";
 
       // Use mongo db as a cloud service
-      //uri = "mongodb://10.128.0.6:27017";
+      uri = "mongodb://10.128.0.6:27017";
     }
     String dbName = config.getString("mongo_db");
     if (dbName == null) {
