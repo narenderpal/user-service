@@ -1,0 +1,4 @@
+{
+  "user.service.http.address": "0.0.0.0",
+  "user.service.http.port": 8091
+}

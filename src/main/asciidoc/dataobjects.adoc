@@ -1,0 +1,22 @@
+= Cheatsheets
+
+[[User]]
+== User
+
+++++
+ Created by napal on 25/06/17.
+++++
+'''
+
+[cols=">25%,^25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[email]]`email`|`String`|-
+|[[firstName]]`firstName`|`String`|-
+|[[lastName]]`lastName`|`String`|-
+|[[password]]`password`|`String`|-
+|[[phone]]`phone`|`String`|-
+|[[username]]`username`|`String`|-
+|===
+
