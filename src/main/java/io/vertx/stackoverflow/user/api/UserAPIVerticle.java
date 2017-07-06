@@ -88,8 +88,6 @@ public class UserAPIVerticle extends BaseVerticle {
     if (user.getUsername() == null || user.getPassword() == null) {
       badRequest(context, new IllegalStateException("Username or password is not valid"));
     } else {
-      //JsonObject result = new JsonObject().put("message", "user added successfully")
-        //.put("username", user.getUsername());
       userService.addUser(user, resultHandlerNonEmpty(context));
     }
   }
