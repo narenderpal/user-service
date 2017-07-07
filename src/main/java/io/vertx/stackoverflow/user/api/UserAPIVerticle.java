@@ -48,7 +48,7 @@ public class UserAPIVerticle extends BaseVerticle {
 
     // http server host and port
     String host = config().getString("user.service.http.address", "0.0.0.0");
-    int port = config().getInteger("user.service.http.port", 8091);
+    int port = config().getInteger("user.service.http.port", 8080);
 
     // create HTTP server and publish REST service
     // TODO : Just create and start http server... for cloud deployment service discovery and publish endpoint is not needed
@@ -136,7 +136,7 @@ public class UserAPIVerticle extends BaseVerticle {
     Future<HttpServer> httpServerFuture = Future.future();
     vertx.createHttpServer()
       .requestHandler(router::accept)
-      .listen(port, host, httpServerFuture.completer());
+      .listen(port, httpServerFuture.completer());
     return httpServerFuture.map(r -> null);
   }
 

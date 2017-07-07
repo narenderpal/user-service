@@ -1,6 +1,6 @@
 {
   "user.service.http.address": "user-service",
-  "user.service.http.port": 8091,
+  "user.service.http.port": 8080,
   "mongo_uri": "mongodb://10.128.0.6:27017",
   "mongo_db" : "cmad"
 
