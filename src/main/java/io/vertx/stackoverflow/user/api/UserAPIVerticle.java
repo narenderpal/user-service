@@ -136,7 +136,7 @@ public class UserAPIVerticle extends BaseVerticle {
     Future<HttpServer> httpServerFuture = Future.future();
     vertx.createHttpServer()
       .requestHandler(router::accept)
-      .listen(port, httpServerFuture.completer());
+      .listen(port, host, httpServerFuture.completer());
     return httpServerFuture.map(r -> null);
   }
 
