@@ -37,6 +37,8 @@ public class UserAPIVerticle extends BaseVerticle {
     final Router router = Router.router(vertx);
     // add body handler
     router.route().handler(BodyHandler.create());
+    // cors handler
+    addCorsHandler(router);
 
     //add api route handler
     router.post(ADD_USER).handler(this:: addUser);

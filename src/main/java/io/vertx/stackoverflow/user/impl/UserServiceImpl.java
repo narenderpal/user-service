@@ -140,6 +140,7 @@ public class UserServiceImpl implements UserService {
 
   @Override
   public void deleteUser(String username, Handler<AsyncResult<Void>> resultHandler) {
+    System.out.println("Entered deleteUser " + username);
 
     JsonObject query = new JsonObject().put("username", username);
     mongoClient.removeDocument(COLLECTION, query,
