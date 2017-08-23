@@ -20,4 +20,6 @@ To build the project:
 mvn clean package
 ----
 
+
+
 It generates a _fat-jar_ in the `target` directory.
